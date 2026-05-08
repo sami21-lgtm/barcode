@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Barcode & QR Scanner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <h2>Smart Scanner</h2>
+            <p>Position the barcode or QR code inside the frame</p>
+        </header>
+
+        <div class="scanner-wrapper">
+            <div id="reader"></div>
+            <div class="laser-line"></div>
+            <div class="scanner-frame"></div>
+        </div>
+
+        <div class="result-card" id="resultCard">
+            <h3>Scan Successful! 🎉</h3>
+            <p id="resultText">No code detected</p>
+            <button onclick="resetScanner()" class="btn-reset">Scan Again</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
